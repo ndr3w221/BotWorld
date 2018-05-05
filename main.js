@@ -161,7 +161,7 @@ bot.on('message', function(message){
             });
         }
     }, function addFooter(embed, bot, message, command, args){
-        embed.setFooter(bot.user.username + `#1500 version 2.5.2 - ` + new Date().toISOString(), bot.user.avatarURL);
+        embed.setFooter(`${bot.user.tag} version 2.5.2 - ` + new Date().toISOString(), bot.user.avatarURL);
     });
     }
 });
